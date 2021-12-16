@@ -17,6 +17,7 @@ class MemoryGame {
                 document.getElementById('timer-text').innerText = `Game Over`  
                 alert(`Game Over`)
                 clearInterval(this.timerId)
+                window.reload()
                 return
             }
             document.getElementById('timer-text').innerText = `Remaining time: ${this.time} s`
